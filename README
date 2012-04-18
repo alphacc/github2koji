@@ -1,0 +1,23 @@
+Requirement:
+   * Add a "sources" destination to a Makefile
+   * Works with koji
+   * Possible ?
+   * 1 git repository for code and package generation
+
+Layout:
+
+   * FEDORA:
+     Separate repository for package. 
+   eg : git://pkgs.fedoraproject.org/webkitgtk
+   * sources
+   * myspec.spec
+   * fedpkg
+
+   * Idea:
+     git clone
+     make sources
+     build
+
+     Need a Makefile section 
+
+Koji:
