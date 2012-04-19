@@ -10,9 +10,9 @@ Prerequisites:
 Usage:
 ======
 
-koji build --scratch <buildtag> git://github.com/alphacc/github2koji.git?#HEAD
+koji build --scratch buildtag git://github.com/alphacc/github2koji.git?#HEAD
 
-koji build --scratch <buildtag> git://github.com/alphacc/github2koji.git?#<commit>
+koji build --scratch buildtag git://github.com/alphacc/github2koji.git?#commit
 
 Requirement:
 ============
