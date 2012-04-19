@@ -10,4 +10,4 @@ koji build --scratch <buildtag> git://github.com/alphacc/github2koji.git?#<commi
 
 Requirement:
    * Add a "sources" destination to a Makefile
-   * 1 git repository for code and package generation
+   * 1 git repository for code and 1 for package generation ??
