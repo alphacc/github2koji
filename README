@@ -1,3 +1,6 @@
+Description:
+   * Build a RPM from source to a private koji instance.
+
 Prerequisites:
    * scm_allowed configured correctly in /etc/kojid/kojid.conf
    * "common" git repository exits on git server base (???)
@@ -11,3 +14,6 @@ koji build --scratch <buildtag> git://github.com/alphacc/github2koji.git?#<commi
 Requirement:
    * Add a "sources" destination to a Makefile
    * 1 git repository for code and package generation
+
+Links:
+   * Koji : http://fedoraproject.org/wiki/Koji
