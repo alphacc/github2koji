@@ -6,7 +6,7 @@ Prerequisites:
 ==============
    * scm_allowed configured correctly in /etc/kojid/kojid.conf
    * host:repository[:use_common[:source_cmd]]
-     e.g :allowed_scms=github.com:/alphacc/*:no
+     e.g :allowed_scms=github.com:/alphacc/*:no:make,sources
    * "common" git repository exits on git server base (???)
    Explanations from daemon.py : "scm_allowed is a space-separated list of host:repository[:use_common[:source_cmd]] tuples.  Incorrectly-formatted
    tuples will be ignored. If use_common is not present, kojid will attempt to checkout a common/ directory from the
@@ -26,4 +26,4 @@ koji build --scratch buildtag git://github.com/alphacc/github2koji.git?#commit
 Requirement:
 ============
    * Add a "sources" destination to a Makefile or define a "source_cmd" in kojid.conf
-   * 1 git repository for code and 1 for package generation ??
+   * avoid 1 git repository for code and 1 for package generation.
